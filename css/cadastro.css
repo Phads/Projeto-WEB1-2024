@@ -1,0 +1,36 @@
+
+.conteinerCadastro{
+    margin-top: 50px;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+}
+
+.formsCadastro{
+    
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    gap: 20px
+    
+}
+
+/* label{
+    
+} */
+
+input{
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 2px;
+    height: 30px;
+    width: 100%;
+    margin-top: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+input:hover{
+    box-shadow: 2px 2px 5px  rgb(64, 74, 216)
+}
