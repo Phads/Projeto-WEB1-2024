@@ -30,10 +30,13 @@ body{
 
 .container_noticias{
     width: 100%;
+    
 }
 .secao_principal{
-    width: 85%;
+    width: 90%;
     margin: 20px auto;
+    background-color: white;
+    
 }
 
 .secao_principal .titulo{
@@ -54,20 +57,25 @@ body{
 }
 
 .cards_noticias{
-    display: inine;
+    display: flex;
     margin: 25px auto;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 10px;
 }
 
 
 .card_noticia{
-    border: 5px solid black;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, .212);
     border-radius: 5px;
-    width: 100%;
+    width: 70%;
     display: flex;
     justify-items: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 .secao_imagem{
@@ -82,7 +90,9 @@ body{
 
 .conteudo{
     padding: 15px 20px;
+    
 }
+
 footer{
     width: 100%;
     color: black;
