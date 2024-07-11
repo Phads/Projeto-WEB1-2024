@@ -93,6 +93,22 @@ body{
     
 }
 
+.data_postagem a{
+    text-decoration: none;
+    color: black;
+    margin-top: 5px;
+    display: inline-block;
+    background-color: #1e7fee;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.data_postagem a:hover{
+    background-color: #1232c5;
+}
+
 footer{
     width: 100%;
     color: black;

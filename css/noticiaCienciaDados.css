@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+body{
+    background: #eeeded;
+    /*alterar a cor do depois de selecinar paleta */ 
+}
+
+.secao_principal .imagem {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.texto{
+    
+}
