@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/cadastro.css">
 </head>
 
@@ -22,24 +22,69 @@
             <a href="cadastro.html">Registrar</a>
         </div>
     </div>
-    
-    <div class="conteinerCadastro">
-        <h2>Cadastro de Usuário</h2>
 
-        <div class="formsCadastro">
-            <div>
-                <label for="nome">Nome</label>
-                <input type="text">
-            </div>
-            <div>
-                <label for="email">Email</label>
-                <input type="text">
-            </div>
-            <div>
-                <label for="senha">Senha</label>
-                <input type="text">
-            </div>
-            <input type="submit" value="Cadastrar">
+    <div class="conteinerCadastro">
+        <div class="imagemForms">
+            <img src="img/undraw_profile_re_4a55.svg" alt="">
+        </div>
+
+        <div class="conteinerForms">
+            <form action="#">
+                <div class="formHeader">
+                    <div class="titulo">
+                        <h1>Cadastre-se</h1>
+                    </div>
+                    <div class="botaoEntrar">
+                        <button><a href="">Entrar</a></button>
+                    </div>
+                </div>
+
+                <div class="inputGrup">
+                    <div class="inputCaixaTexto">
+                        <label for="nome">Nome</label>
+                        <input id="nome" type="text" name="nome" placeholder="Digite seu nome completo" required>
+                    </div>
+                    <div class="inputCaixaTexto">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" nome="email" placeholder="Digite seu Email" required>
+                    </div>
+                    <div class="inputCaixaTexto">
+                        <label for="fone">Telefone</label>
+                        <input id="fone" type="tel" name="fone" placeholder="(XX) XXXXX-XXXX" required>
+                    </div>
+                    <div class="inputCaixaTexto">
+                        <label for="senha">Senha</label>
+                        <input id="senha" type="senha" name="senha" placeholder="Digite uma Senha" required>
+                    </div>
+                </div>
+                
+                <div class="generoTitulo">
+                    <h6>Gênero</h6>
+                </div>
+                
+                <div class="generoGrup">
+                    <div class="inputGeneroGrup">
+                        <input type="radio" id="mulher" name="genero">
+                        <label for="mulher">Feminino</label>
+                    </div>
+                    <div class="inputGeneroGrup">
+                        <input type="radio" id="homen" name="genero">
+                        <label for="homen">Masculino</label>
+                    </div>
+                    <div class="inputGeneroGrup">
+                        <input type="radio" id="outros" name="genero">
+                        <label for="outros">Outros</label>
+                    </div>
+                    <div class="inputGeneroGrup">
+                        <input type="radio" id="none" name="genero">
+                        <label for="none">Prefiro não dizer</label>
+                    </div>
+                </div>
+
+                <div class="botaoContinuar">
+                    <button><a href="#">Continuar</a></button>
+                </div>
+            </form>
         </div>
     </div>
 </body>
