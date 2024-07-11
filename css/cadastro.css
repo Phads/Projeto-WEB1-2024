@@ -223,7 +223,7 @@ footer{
     height: 200px;
     align-items: center;
     justify-content: center;
-    /* background: #eeeded; */
+    background: #eeeded; 
     display: inline-flex;
     gap: 200px;
 }
@@ -274,9 +274,8 @@ footer{
 }
 
 .footer-lista {
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 0.75rem;
 }
 
@@ -310,5 +309,4 @@ footer{
 #footer_copywrigth {
     display: flex;
     justify-content: center;
-    background-color: #4267b3;
 }
