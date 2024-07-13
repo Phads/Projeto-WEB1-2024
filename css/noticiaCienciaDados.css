@@ -30,3 +30,16 @@ body{
     flex-direction: column;
     justify-content: center;
 }
+@media screen and (max-width: 1064px) {
+    #footer-conteudo {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        display: inline-flex;
+        gap: 50px;
+        margin-left: 20px;
+        margin-right: auto;
+    }
+
+}
