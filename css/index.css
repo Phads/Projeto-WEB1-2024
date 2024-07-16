@@ -56,7 +56,7 @@ body {
     margin-top: 20px;
 }
 
-.cards_noticias {
+.grup_Cards_noticias{
     display: flex;
     margin: 25px auto;
     justify-items: center;
@@ -75,6 +75,7 @@ body {
     align-items: center;
     flex-direction: column;
     margin-top: 30px;
+    text-align: justify;
 }
 
 .secao_imagem {
@@ -85,7 +86,6 @@ body {
 .secao_imagem img {
     width: 60%;
     height: auto;
-    background-color: rgb(128, 137, 223);
 }
 
 .conteudo {
@@ -95,18 +95,25 @@ body {
 
 .data_postagem a {
     text-decoration: none;
-    color: black;
-    margin-top: 5px;
+    font-weight: 700;
+    font-size: small;
+    color: white;
     display: inline-block;
     background-color: #1e7fee;
     padding: 0.4rem 1rem;
     border-radius: 5px;
     cursor: pointer;
-
 }
 
 .data_postagem a:hover {
     background-color: #1232c5;
+}
+
+.data_postagem p {
+    padding: 5px;
+    font-size: 0.60rem;
+    font-weight: 700;
+    text-align: center;
 }
 
 footer {
@@ -123,7 +130,7 @@ footer {
     gap: 150px;
 }
 
-#footer-contatos h1{
+#footer-contatos h1 {
     margin-bottom: 0.75rem;
 }
 
@@ -206,16 +213,67 @@ footer {
     justify-content: center;
 }
 
+/* responsividade header */
+@media screen and (max-width: 951px){
+    .cabecalho {
+        flex-direction: column;
+    }
+    
+    
+}
+
+/* responsividade header- fim */
+
+/* responsividade reodape */
 @media screen and (max-width: 1064px) {
     #footer-conteudo {
         width: 100%;
         height: auto;
         align-items: center;
         justify-content: center;
-        display: inline-flex;
-        gap: 50px;
+        gap: 40px;
         margin-left: 20px;
         margin-right: auto;
+        text-size-adjust: auto;
+    }
+    
+    .card_noticia {
+        width: 90%;
     }
 
+}
+
+@media screen and (max-width: 950px) {
+    
+    #footer-conteudo {
+        flex-direction: column;
+        gap: 25px;
+        margin-left: 20px;
+        margin-right: auto;
+        text-size-adjust: auto;
+    }
+    
+    #footer-inscreva-se {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.75rem;
+    }
+    
+    #footer-inscreva-se {
+        font-size: 0.90rem;
+    }
+
+    #footer_copywrigth {
+        justify-content: center;
+    }
+
+    #footer_copywrigth p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: black;
+    }
+    /* responsividade reodape - fim*/
 }
