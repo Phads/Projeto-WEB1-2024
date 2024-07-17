@@ -32,6 +32,10 @@ body {
     padding: 10px 12px;
 }
 
+.menuCabecalho a:hover {
+    text-decoration: underline 4px;
+}
+
 .conteinerCadastro {
     width: 80%;
     height: 80vh;
@@ -44,7 +48,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: antiquewhite;
+    background-color: rgb(224, 201, 170);
     padding: 1rem;
 }
 

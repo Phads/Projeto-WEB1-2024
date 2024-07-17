@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    letter-spacing: 1px;
 }
 
 body {
@@ -25,6 +24,10 @@ body {
     text-decoration: none;
     padding: 10px 12px;
 
+}
+
+.menuCabecalho a:hover {
+    text-decoration: underline 4px;
 }
 
 .container_noticias {

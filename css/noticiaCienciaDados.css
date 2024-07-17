@@ -7,7 +7,6 @@
 
 body{
     background: #eeeded;
-    /*alterar a cor do depois de selecinar paleta */ 
 }
 .secao_principal {
     width: 60%;
@@ -20,9 +19,11 @@ body{
     display: flex;
     justify-content: center;
 }
+
 .imagem img{
     width: 45%;
 }
+
 .texto{
     margin: 10px;
     margin-top: 50px;

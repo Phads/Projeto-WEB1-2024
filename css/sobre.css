@@ -28,6 +28,10 @@ body{
     padding: 10px 12px;
 }
 
+.menuCabecalho a:hover {
+    text-decoration: underline 4px;
+}
+
 .containerSobre {
     width: 100%;
     height: 69vh;
@@ -199,6 +203,17 @@ footer{
 @media screen and (max-width: 951px){
     .cabecalho {
         flex-direction: column;
+    }
+
+    .containerSobre{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #conteudoSobre1, #conteudoSobre2, #conteudoSobre3 {
+        width: 70%;
     }
 }
 /* responsividade header- fim */
