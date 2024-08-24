@@ -12,6 +12,7 @@
     <!--Links do CSS-->
     <link rel="stylesheet" href="css/cadastro.css">
     <link rel="stylesheet" href="css/fontFamily.css">
+    <script src="JavaScript/validarCadastro.js"></script>
 </head>
  <!--Corpo da página-->
 <body>
@@ -35,7 +36,7 @@
         </div>
     
         <div class="conteinerForms">
-            <form action="#">
+            <form action="" id="formulario" method="post" name="formulario">
                 <div class="formHeader">
                     <div class="titulo">
                         <h1>Cadastre-se</h1>
@@ -53,7 +54,7 @@
                     </div>
                     <div class="inputCaixaTexto">
                         <label for="email">E-mail</label>
-                        <input id="email" type="email" nome="email" placeholder="Digite seu Email" required>
+                        <input id="email" type="email" name="email" placeholder="Digite seu Email" required>
                     </div>
                     <div class="inputCaixaTexto">
                         <label for="fone">Telefone</label>
@@ -89,7 +90,7 @@
                 </div>
 
                 <div class="botaoContinuar">
-                    <button><a href="#">Continuar</a></button>
+                    <button type="button" class="botao" onclick="validar()"><a href="#">Continuar</a></button>
                 </div>
             </form>
         </div>
