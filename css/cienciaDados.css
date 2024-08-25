@@ -1,3 +1,14 @@
+.subtitulo{
+    width: 100%;
+    margin-top: 0;
+    gap: 20px;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .seçãoPrincipal{
     width: 60%;
     margin: 20px auto;
@@ -30,15 +41,19 @@
     width: 25%;
     position: relative;
     transition: 2s;
+    justify-content: center;
 }
 
 .slide img {
-    width: 800px;
+    width: 400px;
+    height: 200px;
+    margin-left: 200px;
 }
 
 .slide-dados img {
     width: 300px;
     width: 250px;
+    margin-left: 250px;
     
 }
 .manual-navigation{
@@ -103,4 +118,28 @@
 
 #radio1:checked ~ .navigation-auto .auto-btn1{
     background-color: black;
+}
+
+.link-compra a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: small;
+    color: white;
+    display: inline-block;
+    background-color: #1e7fee;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.link-compra{
+    margin-left: 350px;
+}
+
+.link-compra a:hover{
+    background-color: #1232c5;
+}
+
+.texto {
+    margin-left: 250px;
 }

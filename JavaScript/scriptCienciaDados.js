@@ -3,7 +3,7 @@ document.getElementById("radio1").checked = true;
 
 setInterval(function() {
     proximaImagem();
-}, 5000)
+}, 8000)
 
 function proximaImagem() {
     count++;
