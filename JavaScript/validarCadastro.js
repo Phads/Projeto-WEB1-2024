@@ -6,7 +6,6 @@ function validarFormulario() {
     const fone = document.getElementById("fone");
     const senha = document.getElementById("senha");
     const confirmarSenha = document.getElementById("confirmarSenha");
-    let emailRegex = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/;
 
     formulario.addEventListener('submit', (event) => {
         event.preventDefault();
@@ -38,7 +37,7 @@ function validarFormulario() {
         if (foneValue === '') {
             validarErro(fone, 'Preencha esse campo.');
         } else if (!foneValue.match(/^(?:(?:\+|00)?(55)\s?)?(?:\(?([1-9][0-9])\)?\s?)?(?:((?:9\d|[2-9])\d{3})\-?(\d{4}))$/)) {
-            validarErro(fone, 'insira um telefone válido.');
+            validarErro(fone, 'Insira um telefone válido.');
         } else {
             validarSuccess(fone)
         }
@@ -53,10 +52,8 @@ function validarFormulario() {
 
         if (confirmarSenhaValue === '') {
             validarErro(confirmarSenha, 'Preencha esse campo.');
-        } else if (senhaValue.length < 8) {
-            validarErro(senha, 'A senha deve ter no mínimo 8 digitos.')
         } else if (confirmarSenhaValue != senhaValue) {
-            validarErro(confirmarSenha, 'A senha deve ser igual.')
+            validarErro(confirmarSenha, 'As senhas devem ser iguais.')
         } else {
             validarSuccess(confirmarSenha);
         }
