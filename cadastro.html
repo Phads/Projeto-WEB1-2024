@@ -34,7 +34,7 @@
         <div class="imagemForms">
             <img src="img/undraw_profile_re_4a55.svg" alt="">
         </div>
-    
+        
         <div class="conteinerForms">
             <form action="" id="formulario" method="post" name="formulario">
                 <div class="formHeader">
@@ -50,19 +50,28 @@
                 <div class="inputGrup">
                     <div class="inputCaixaTexto">
                         <label for="nome">Nome</label>
-                        <input id="nome" type="text" name="nome" placeholder="Digite seu nome completo" required>
+                        <input id="nome" type="text" name="nome" placeholder="Digite seu nome completo" >
+                        <small>Error message</small> 
                     </div>
                     <div class="inputCaixaTexto">
                         <label for="email">E-mail</label>
-                        <input id="email" type="email" name="email" placeholder="Digite seu Email" required>
+                        <input id="email" type="text" name="email" placeholder="Digite seu Email" >
+                        <small>Error message</small>   
                     </div>
                     <div class="inputCaixaTexto">
                         <label for="fone">Telefone</label>
-                        <input id="fone" type="tel" name="fone" placeholder="(XX) XXXXX-XXXX" required>
+                        <input id="fone" type="tel" name="fone" placeholder="(XX) XXXXX-XXXX" >
+                        <small>Error message</small>  
                     </div>
                     <div class="inputCaixaTexto">
                         <label for="senha">Senha</label>
-                        <input id="senha" type="senha" name="senha" placeholder="Digite uma Senha" required>
+                        <input id="senha" type="password" name="senha" placeholder="Digite sua data de nascimento" >
+                        <small>Error message</small>  
+                    </div>
+                    <div class="inputCaixaTexto">
+                        <label for="confirmarSenha">Verificar senha</label>
+                        <input id="confirmarSenha" type="password" name="confirmarSenha" placeholder="Confirme sua senha" >
+                        <small>Error message</small>  
                     </div>
                 </div>
 
@@ -72,25 +81,25 @@
 
                 <div class="generoGrup">
                     <div class="inputGeneroGrup">
-                        <input type="radio" id="mulher" name="genero">
+                        <input type="radio" id="mulher" name="genero" required>
                         <label for="mulher">Feminino</label>
                     </div>
                     <div class="inputGeneroGrup">
-                        <input type="radio" id="homen" name="genero">
+                        <input type="radio" id="homen" name="genero" required>
                         <label for="homen">Masculino</label>
                     </div>
                     <div class="inputGeneroGrup">
-                        <input type="radio" id="outros" name="genero">
+                        <input type="radio" id="outros" name="genero" required>
                         <label for="outros">Outros</label>
                     </div>
                     <div class="inputGeneroGrup">
-                        <input type="radio" id="none" name="genero">
+                        <input type="radio" id="none" name="genero" required>
                         <label for="none">Prefiro não dizer</label>
                     </div>
                 </div>
 
                 <div class="botaoContinuar">
-                    <button type="button" class="botao" onclick="validar()"><a href="#">Continuar</a></button>
+                    <button type="submit" class="botao" onclick="validarFormulario()">Continuar</button>
                 </div>
             </form>
         </div>

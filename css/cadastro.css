@@ -135,6 +135,32 @@ body {
     color: #000000be;
 }
 
+.inputCaixaTexto.success input {
+    border: 1px solid #4ECA64;
+}
+
+.inputCaixaTexto.error input {
+    border: 1px solid #DB5A5A;
+}
+
+.inputCaixaTexto.error small{
+    color: #DB5A5A;
+    visibility: visible;
+}
+
+.inputCaixaTexto i {
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.inputCaixaTexto small {
+    visibility: hidden;
+    position: static;
+    font-size: 12px;
+}
+
 .generoGrup {
     display: flex;
     justify-content: space-between;
